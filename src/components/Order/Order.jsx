@@ -45,9 +45,12 @@ export default function Order() {
         console.log('visa Order');
         try{
             
-            const res = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${window.location.origin}` ,values ,{
+            const res = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}`,values ,{
                 headers:{
                     token:localStorage.getItem('token')
+                },
+                params:{
+                    url: "https://sharweeda.github.io/e-commerce/#"
                 }
             })
             console.log(res);
@@ -55,10 +58,7 @@ export default function Order() {
         }
         catch(error){
             console.log(error);
-    
         }
-        
-        
     }
     
 

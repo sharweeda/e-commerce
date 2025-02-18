@@ -31,7 +31,7 @@ export default function MainSliders() {
                             color="#4fa94d"
                             ariaLabel="loading"
                         />
-                    </div> : <div className='row'>
+                    </div> : <div className='row '>
         <div className="w-3/4">
         <Slider {...settings}>
           <img src={MainSlider} className='w-full h-[400px]' alt="MainSlider" />

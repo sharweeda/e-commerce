@@ -34,7 +34,7 @@ export default function Cart() {
     />
     </div>
 ) : allCartItems?.length === 0 ? ( 
-<div className="p-6 text-red-600 text-lg text-center">Cart Is Empty</div>
+<div className="p-6 text-red-600 text-lg text-center font-semibold ">Cart Is Empty</div>
 ) : (
 <>
     <div className="relative m-5 overflow-x-auto shadow-md sm:rounded-lg">
